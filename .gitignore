@@ -1,1 +1,7 @@
-.aux, .fls, .fdb_latexmk, .log, .out, .toc, .synctex.gz, .bbl, .blg, .run.xml, .pdf
+# LaTeX generated files
+*.log
+*.out
+*.aux
+*.gz
+*.fdb_latexmk
+*.fls
