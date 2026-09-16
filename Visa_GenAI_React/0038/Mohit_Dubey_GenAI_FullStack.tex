@@ -1,0 +1,186 @@
+\documentclass[100pt,a4paper]{article}
+\usepackage[left=0.35in,right=0.35in,top=0.25in,bottom=0.35in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{xcolor}
+\hypersetup{colorlinks=true, urlcolor=blue}
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+
+% ---------- SECTION STYLE ----------
+\titleformat{\section}
+{\centering\bfseries\uppercase}
+{}{0pt}{}
+\newcommand{\sectionline}{
+\begin{center}
+\vspace{-10pt}
+\rule{1\textwidth}{0.5pt}
+\end{center}
+\vspace{1pt}
+}
+
+\titlespacing{\section}{0pt}{-7pt}{3pt}
+
+% Bullet style (small filled circle like screenshot)
+\setlist[itemize]{
+    leftmargin=20pt,
+    itemsep=0em,
+    topsep=0pt,
+    partopsep=3pt,
+    parsep=0pt,
+}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Mohit Dubey} \\ \vspace{4pt}
+    \textbf{AI Full Stack Engineer } \\ \vspace{6pt}
+    \small Bengaluru, India $|$ +91-9074923087 $|$ \href{mailto:mohitdubey0038@gmail.com}{\underline{mohitdubey0038@gmail.com}} \\
+    \href{https://www.linkedin.com/in/mohit-dubey-037/}{\underline{linkedin.com/in/mohitdubey037}} $|$ \href{https://leetcode.com/u/mohitdubey037/}
+    {\underline{leetcode.com/mohitdubey}}
+\end{center}
+
+
+% ================= SUMMARY =================
+\sectionline
+\section*{SUMMARY}
+Senior Full Stack Developer with 5+ years of experience designing and building high-performance \textbf{React} applications and \textbf{Python/Node.js} backend services, paired with deep expertise in \textbf{AI agent} and \textbf{LLM application} development end-to-end — including agentic orchestration logic (\textbf{LangChain}, \textbf{LangGraph}, \textbf{ReAct}-style reasoning/action loops). Skilled in \textbf{REST/GraphQL API integration}, agent tooling, and \textbf{observability/tracing} for production agent systems. Comfortable owning architecture end-to-end in \textbf{Agile/Scrum} teams, with hands-on experience on the \textbf{Databricks} platform and \textbf{cloud-native DevOps} (AWS, Kubernetes, Docker, CI/CD, Infrastructure-as-Code).
+
+% ================= WORK EXPERIENCE =================
+\sectionline
+\section*{WORK EXPERIENCE}
+\textbf{Software Engineer || Publicis Sapient}
+\hfill June 2025 - Present
+\begin{itemize}
+\vspace{2pt}
+\item {Led the architecture and development of an enterprise-grade \textbf{GraphRAG}-based private coding assistant for a B2B SaaS platform using \textbf{LangGraph}, \textbf{DeepAgents}, and agentic AI, improving code retrieval accuracy by 38\% and reducing developer resolution time by 60\%.}
+\item {Designed and implemented an \textbf{MCP server} with dynamic tool discovery, semantic search, and context orchestration, reducing LLM context overhead by 70\% and lowering token consumption and inference costs across production workloads.}
+\item {Built a \textbf{multi-tenant, multi-agent AI platform} with real-time guardrails, memory management, and policy enforcement, enabling secure deployment across \textbf{multiple tenants} while maintaining sub-second response latency.}
+\item {Architected scalable agent workflows leveraging \textbf{LangGraph}, vector databases, reranking, and hybrid retrieval techniques, increasing answer relevance by 42\% and supporting thousands of concurrent enterprise requests.}
+\item {Continuously experimented with a broad portfolio of \textbf{Generative AI} model families — transformers, LLMs, and multimodal models — evaluating emerging AI tooling and agent frameworks for production readiness, security, and compliance before adoption.}
+\item {Co-developed features and integrations side-by-side with \textbf{GenAI coding agents} (agentic orchestration, MCP tool-calling), cutting time-to-market on new capabilities and shipping on a rapid, near-continuous release cadence with end-to-end ownership.}
+\item {Built high-performance, scalable \textbf{REST APIs} integrating both documented and undocumented internal and third-party service interfaces, adhering to security best practices and secured via \textbf{OAuth2}.}
+\item {\textbf{Partnered with executive leadership} to identify high-impact AI opportunities, quantify ROI, and drive new revenue streams from tech innovation.}
+\item {Collaborate closely with Product, Engineering, and Data Governance groups to enforce strict frameworks for \textbf{ethical AI, regulatory compliance, and responsible model deployment}.}
+\item {Managed the full project delivery lifecycle from conception to production rollout, maintaining a consistent \textbf{95\% project success rate}.}
+% \item  {Designed and implemented a \textbf{client-server UI version synchronization system} (React + Nginx) to ensure users always run the latest deployed build.}
+% \item  {Built a \textbf{reusable, highly configurable table component} adopted across 15+ modules, improving consistency and reducing maintenance overhead.}
+% \item  {Centralized API interactions by creating a \textbf{shared network layer} with consistent error handling and retry logic, improving reliability across the application.}
+\item {Implemented \textbf{performance-optimization} techniques such as \textbf{code-splitting, lazy loading, and dynamic imports} to reduce \textbf{JavaScript bundle size} and improve time to interactive (TTI).}
+\item {Engineered scalable \textbf{Frontend Architecture} using \textbf{React.js}, \textbf{Next.js}, and micro-frontends, optimizing platform performance by \textbf{60\%} and securing workflows using \textbf{OAuth2} authentication protocols.}
+\end{itemize}
+
+
+
+
+\vspace{5pt}
+\textbf{Software Engineer || Deqode}
+\hfill Aug 2023 - May 2025
+\begin{itemize}
+\vspace{2pt}
+\item {Architected enterprise-grade \textbf{RAG pipeline} using \textbf{LangChain}, Pinecone/FAISS, and AWS, reducing LLM hallucinations by 32\% and improving retrieval latency by 45\% across 1M+ documents.}
+\item {Fine-tuned 7B/13B \textbf{Qwen3-VL} LLMs using \textbf{SFT} and \textbf{QLoRA} on \textbf{AWS SageMaker} GPU clusters, improving domain-specific accuracy by 21\% while cutting inference cost by 60\%.}
+\item {Deployed production \textbf{LLM serving infrastructure} on \textbf{GCP Vertex AI} with \textbf{vLLM} and TensorRT-LLM, serving 13B parameter models at sub-200ms latency with 40\% cost reduction for 500K+ requests/day.}
+\item {Orchestrated cloud-native ML systems on \textbf{Kubernetes} with \textbf{MLflow}, Terraform, and Vertex AI Pipelines; led platform modernization for \textbf{15+ ML teams}, compressing model deployment cycle from 3 weeks to 2 days.}
+\item {Architected \textbf{distributed training} using DeepSpeed and FSDP for multi-GPU foundation model runs, reducing training time by 65\% and scaling to 34B+ parameter models.}
+\item {Deployed fluid, multi-agent conversational systems leveraging LangChain Agents, Streamlit UIs, and AWS Bedrock API gateways; \textbf{mentored AI engineering teams} on RAG scaling laws and context-window optimization.}
+\item {Created robust \textbf{AI monitoring and real-time dashboarding infrastructures} using Grafana, Power BI, and Looker to continuously track operational metrics, system health, and model drift.}
+\item {Translated deep AI behavioral insights into predictive analytics models, enhancing customer experience metrics and optimizing down-stream system performance.}
+\item {Built Aadhaar-Voter ID linking UI in React, scaling to \textbf{scaling to handle high-traffic production loads} with resilient, reusable components.}
+\item {Migrated \textbf{Redux} to modular \textbf{RTK} slices + RTK Query, reducing API overfetching by 78\%.}
+\item {Developed editable virtualized grid (1M+ rows) using \textbf{react-window}, with smooth scroll and memoization.}
+\item {Led federated design \textbf{system adopted by 50+ teams}, enforced standards.}
+\item {Integrated Web Vitals + \textbf{Sentry} to track LCP, FCP, TTI across 500k+ sessions/month and optimize core web metrics.}
+\item {Built \textbf{secure file uploader} with presigned S3, retry/resume, chunked upload, drag-and-drop UI, and Fetch API.}
+\item {Implemented \textbf{keyboard navigation}, focus management, ARIA roles, and screen reader support using semantic HTML.}
+\item {Built schema-to-React renderer supporting \textbf{dynamic layouts}, conditional fields, async data bindings, and versioned JSON configs; cut Ul rollout time.}
+\end{itemize}
+
+
+
+
+\vspace{5pt}
+\textbf{Software Engineer || Shiv Technolabs}
+\hfill Feb 2023 - July 2023
+\begin{itemize}
+\vspace{2pt}
+\item {\textbf{Leveraged deep knowledge of browser internals} to optimize performance, systematically reducing reflow,repaint, and bundle sizes to achieve significant improvements in Core Web Vitals.}
+\item {\textbf{Implemented advanced state management} patterns across complex application workflows using MobX and modern ES6+ JavaScript features for predictable data flow.}
+\item {\textbf{Led frontend performance audits} analyzing JS engines compilation behaviors and execution contexts to eliminate memory leaks and runtime bottlenecks.}
+\item {Orchestrated the transition to \textbf{Next.js} methodologies, integrating \textbf{RESTful APIs} to achieve seamless data transfer across platforms, which decreased website bounce rate by \textbf{15\%} and grew traffic.}
+\end{itemize}
+
+
+
+
+\vspace{5pt}
+\textbf{Software Engineer || Sourcebae}
+\hfill May 2021 - Jan 2023
+\begin{itemize}
+\vspace{2pt}
+\item {Built full-stack applications with \textbf{React}, \textbf{TypeScript}, and \textbf{NestJS}, shipping REST API backends backed by \textbf{PostgreSQL} and \textbf{MongoDB} serving 100K+ users with sub-100ms p99 latency via Redis caching.}
+\item {Designed a reusable \textbf{TypeScript} component library with centralized state management, cutting feature delivery time by 40\% across 5 concurrent product teams.}
+\item {Containerized services with \textbf{Docker} and established \textbf{CI/CD pipelines} with automated testing and staged rollouts, eliminating manual deployment errors and enabling zero-downtime releases.}
+\item {Built \textbf{offline-first UI} in React Native using SQLite for local data storage and background sync to update the server when reconnected.}
+
+\end{itemize}
+
+% ================= PROJECT ====================
+\sectionline
+\section*{PROJECTS}
+\begin{tabularx}{\textwidth}{@{} X >{\raggedleft\arraybackslash}p{8cm} @{}}
+\textbf{txt2create.com — Multimodal AI Generation Platform} & 
+\small PyTorch, CUDA, GRPO, QLoRA, vLLM, Kubernetes, TypeScript, MLflow
+\end{tabularx}
+\begin{itemize}
+\vspace{4pt}
+\item {Fine-tuned open-source generative models using \textbf{GRPO}-based reinforcement learning with custom reward functions for human preference alignment, improving prompt-adherence by 38\% over SFT-only baselines.}
+\item {Built self-hosted \textbf{vLLM} inference stack on \textbf{Kubernetes} with GPU-aware scheduling, handling 500+ concurrent generation requests at p99 latency under 4s without any managed cloud ML service.}
+\item {Designed \textbf{TypeScript/Node.js} orchestration layer with async job queues and model-load balancing across backends; tracked 20+ fine-tuning runs with \textbf{MLflow} for reproducible experiment management.}
+\end{itemize}
+
+% ================= EDUCATION ====================
+\sectionline
+\section*{EDUCATION}
+\textbf{Rajiv Gandhi Proudyogiki Vishwavidyalaya} \hfill Bhopal, India \\[2pt]
+Bachelor of Engineering (HONOURS) - Information Technology; GPA: 7.75 
+\hfill August 2016 - May 2020
+
+% ================= ACHIEVEMENTS =================
+\sectionline
+\section*{ACHIEVEMENTS}
+\begin{itemize}
+\item \href{https://www.credly.com/earner/earned/share/b3cbb0c0-3e79-44e8-9014-0f037b0dc12c} {\bf AWS Certified Developer Associate}.
+\item \href{https://www.credly.com/badges/ed0f0afe-4927-4488-86b0-3956fb83e37c/linked_in_profile}{\bf AWS Certified AI Practitioner}.
+\item \href{https://www.credly.com/badges/50f28d0d-2647-4f37-b78e-6bf5ce002d4e/linked_in_profile}{\bf AWS Certified Cloud Practitioner}.
+\item \href{https://www.hackerrank.com/certificates/e8c2450c7b38/}{\bf Hacker Rank Javascript Basic}.
+\item \href{https://www.hackerrank.com/certificates/3348c7124f7d} {\bf Hacker Rank CSS certification}.
+\item \href{https://www.sololearn.com/en/certificates/CT-KRZNT5XO} {\bf Sololearn React + Redux}
+\end{itemize}
+
+% ================= TECHNICAL SKILLS =====================
+\sectionline
+\section*{TECHNICAL SKILLS}
+\setlength{\arrayrulewidth}{1.2pt}
+\begin{itemize}
+\item \textbf{LLMs \& Agents}{: LangChain, LangGraph, CrewAI, Google ADK, LlamaIndex, Hugging Face Transformers, OpenAI API, Ollama, vLLM, TensorRT-LLM, MCP Servers, Agent Orchestration, RAG Systems, Prompt Engineering}
+\item \textbf{Training \& Optimization}{: LLM Fine-Tuning (SFT, QLoRA, LoRA, PEFT), RLHF, GRPO, DeepSpeed, FSDP, Distributed Training, CUDA, Model Quantization (INT8, NF4)}
+\item \textbf{ML \& Deep Learning}{: PyTorch, TensorFlow, scikit-learn, XGBoost, Classical ML, Feature Engineering, Model Optimization}
+\item \textbf{Data Engineering}{: Apache Spark (PySpark, Spark SQL), Databricks, Delta Lake, Kafka, Airflow, BigQuery, ETL/ELT, Feature Store (Feast)}
+\item \textbf{MLOps \& Infrastructure}{: MLflow, Kubeflow, Kubernetes, Docker, Terraform, CI/CD Pipelines, Model Monitoring, Drift Detection, A/B Testing}
+\item \textbf{Cloud}{: AWS (SageMaker, EKS, Lambda, S3), GCP (Vertex AI, GKE, Dataproc, BigQuery)}
+\item \textbf{Backend Engineering}{: Python, FastAPI, Go, TypeScript, REST APIs, gRPC, Microservices, WebSocket, Redis, n8n}
+\item \textbf{Databases \& Vector Stores}{: PostgreSQL, MongoDB, Redis, Qdrant, Milvus, Weaviate, Chroma, SQL}
+\item \textbf{Frameworks:} Reactjs, Redux, Nextjs, SCSS, MaterialUI, ExpressJs, Jest, RTL, Enzyme
+\item \textbf{Tools:} Azure, Docker, Webpack, Git/Github, Postman, Swagger, Figma, Sequelize ORM, Firebase
+\item \textbf{Coursework:} System Design, Database Management Systems, Data Structures and Algorithms, Object Oriented Programming
+\item \textbf{Other:} RESTful Web Services, Agile methodologies, Integration testing, micro frontends, Incident Response \& Operational Excellence
+\end{itemize}
+
+
+\end{document}
