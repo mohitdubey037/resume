@@ -143,14 +143,14 @@
 \sectionline
 \section*{PROJECTS}
 \begin{tabularx}{\textwidth}{@{} X >{\raggedleft\arraybackslash}p{8cm} @{}}
-\textbf{txt2create.com — Multimodal AI Generation Platform} & 
-\small PyTorch, CUDA, GRPO, QLoRA, vLLM, Kubernetes, TypeScript, MLflow
+\textbf{TradeBrains — Automated Real-Time Algorithmic Trading Platform}
 \end{tabularx}
 \begin{itemize}
 \vspace{4pt}
-\item {Fine-tuned open-source generative models using \textbf{GRPO}-based reinforcement learning with custom reward functions for human preference alignment, improving prompt-adherence by 38\% over SFT-only baselines.}
-\item {Built self-hosted \textbf{vLLM} inference stack on \textbf{Kubernetes} with GPU-aware scheduling, handling 500+ concurrent generation requests at p99 latency under 4s without any managed cloud ML service.}
-\item {Designed \textbf{TypeScript/Node.js} orchestration layer with async job queues and model-load balancing across backends; tracked 20+ fine-tuning runs with \textbf{MLflow} for reproducible experiment management.}
+\item {Architected an end-to-end algorithmic trading platform predicting 20-minute stock movements by fine-tuning open-source generative models (\textbf{Llama 3.3 70B}) using 3-stage \textbf{RLHF} (\textbf{SFT}, \textbf{Reward Model}, \textbf{PPO}) and \textbf{GRPO} to align prediction outputs directly with target performance metrics.}
+\item {Implemented custom \textbf{GRPO/PPO reward functions} integrating multi-objective metrics (factual correctness, formatting compliance, and financial risk metrics) to eliminate hallucinations in high-stakes domain outputs.}
+\item {Engineered \textbf{QLoRA 4-bit} parameter-efficient fine-tuning (\textbf{PEFT}) pipelines for 8B-parameter sentiment models, reducing memory footprints while maintaining \textbf{88\% structured score extraction accuracy}.}
+\item {Executed \textbf{Direct Preference Optimization (DPO)} and \textbf{KTO} fine-tuning on domain-specific instruction datasets, bypassing separate reward model latency while matching RLHF alignment quality.}
 \end{itemize}
 
 % ================= EDUCATION ====================
